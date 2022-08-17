@@ -7,92 +7,57 @@ Baseando-se nos testes automatizados já criados neste repo - similares aos feit
 ## Funcionalidades
 
 ### Requisitos
-1. Implemente os métodos marcados com um `//@TODO: comment`  em cada uma das respectivas services,
+
+1.Implemente os métodos marcados com um `//@TODO: comment`  em cada uma das respectivas services,
 na ordem que preferir:
 
-* [ ] _services/StatementsService_
-* [ ] _services/WeirdMathService_
-* [ ] _services/ReferencesService_
-* [ ] _services/ObjectMethodsService_
+* [x] _services/StatementsService_
+* [x] _services/WeirdMathService_
+* [x] _services/ReferencesService_
+* [x] _services/ObjectMethodsService_
 
 > Nota: Para saber quais os comportamentos esperados de cada método, verifique os testes unitários de cada service.
 
-2. Remova os `//@TODO: comments` de cada função implementada, e garanta que os testes referentes à essa função estejam funcionando.
+2.Remova os `//@TODO: comments` de cada função implementada, e garanta que os testes referentes à essa função estejam funcionando.
 
 > Nota: Não são necessárias alterações nos testes. Eles já estão prontos e servem de guia durante a execução do desafio
 
-### Testes
-
-Você saberá que o desafio está concluído quando executar o comando `npm run test` e todos os testes passarem. O resultado deve ser algo parecido com isso:
-
-![image](https://user-images.githubusercontent.com/41883467/144168298-cd15a97d-0c04-49e0-94cd-aadfabd2554b.png)
-
 ### Extras
 
-* [ ] Desafio opcional: Note que no arquivo `test/unit/service/ReferencesService.test`, existe um teste na linha 44 com um `it.skip()`. Esse é um desafio opcional, e caso queira implementá-lo é só remover o `.skip` e implementar a respectiva função que está sendo testada na ReferencesService
-
-## Dicas
-
-Sinta-se livre pra desenvolver sua solução da melhor maneira possível, e caso já queira uma dica sobre como organizar as idéias, aqui vai:
-
-- Lembre que cada `@TODO: comment` tem uma dica sobre como resolver o problema
-- Fique atento ao comportamento esperado do método nos testes
-- Não esqueça de conferir as aulas do curso denovo para fixar mais ainda os conhecimentos
-- Caso queira executar _apenas 1 teste por vez_ para manter o terminal sempre limpo e fácil de trabalhar, você pode ir no teste ou na suite de testes que deseja focar e usar um `.only`. (ex.: `describe.only(...`, `it.only(...`)
-
-### Arquitetura e onde trabalhar
-
-```
-project
-│   README.md
-│   package.json
-│
-└───src
-│   │  
-│   └───service
-│       │   ObjectMethodsService.js     // EDIT HERE !
-│       │   ReferencesService.js        // EDIT HERE !
-│       │   StatementsService.js        // EDIT HERE !
-│       │   WeirdMathService.js         // EDIT HERE !
-│   
-└───test
-│   │  
-│   └───unit/service
-│       │   ObjectMethodsService.js     // DO *NOT* EDIT HERE !
-│       │   ReferencesService.js        // DO *NOT* EDIT HERE !
-│       │   StatementsService.js        // DO *NOT* EDIT HERE !
-│       │   WeirdMathService.js         // DO *NOT* EDIT HERE !
-│         
-```
+* [x] Desafio opcional: Note que no arquivo `test/unit/service/ReferencesService.test`, existe um teste na linha 44 com um `it.skip()`. Esse é um desafio opcional, e caso queira implementá-lo é só remover o `.skip` e implementar a respectiva função que está sendo testada na ReferencesService
 
 ### Checklist features
 
 - ObjectMethodsService
-  * [ ] Deve entender Coerção de tipos e Objects Lifecycle e implementar soluções usando `valueOf`, `toString` e `[Symbol.toPrimitive]`.
+  * [x] Deve entender Coerção de tipos e Objects Lifecycle e implementar soluções usando `valueOf`, `toString` e `[Symbol.toPrimitive]`.
 
 - ReferencesService
-  * [ ] Deve entender tipos de referência e Mutability vs Immutability, e implementar soluções copiando ou não referências de objetos.
+  * [x] Deve entender tipos de referência e Mutability vs Immutability, e implementar soluções copiando ou não referências de objetos.
 
 - StatementsService
-  * [ ] Deve entender o uso de conditional statements no Javascript e seus respectivos retornos em diferentes cenários.
+  * [x] Deve entender o uso de conditional statements no Javascript e seus respectivos retornos em diferentes cenários.
 
 - WeirdMathService
-  * [ ] Deve entender o fluxo de vida do Javascript e as coerções implícitas que ocorrem em expressões matemáticas.
+  * [x] Deve entender o fluxo de vida do Javascript e as coerções implícitas que ocorrem em expressões matemáticas.
 
-## Submissão
+Installing
 
-1. Crie um fork deste repositório e modifique o README.md inserindo o seu nome no início do arquivo.
+Clone o projeto
 
-2. Instale as dependências usando `npm i` e garanta que os testes rodam normalmente com `npm run dev`
+git clone https://github.com/nurycaroline/jsexpert-exercicio01-pokeapi.git
 
-> Nota: Como a idéia é que você implemente os códigos a fim de fazer os testes passarem, a princípio todos os testes estarão quebrando, então não se assuste. :) 
+Instale as dependencias do projeto
 
-3. Implemente cada uma das funções marcadas com um `//@TODO: comment` (e não se esqueça de remover esses comentários uma vez que concluir a implementação)
+```
+yarn
+# or
+npm install
+````
 
-4. Garanta que todos os testes estejam rodando e, caso queira, conclua o desafio opcional mencionado acima. 
+Executar os testes
 
-5. Envie o link no canal `#desafios-jsexpert` da nossa comunidade no discord.
-
-## Até quando?
-
-Se você está pegando esse desafio na estréia, corre lá e envia pra gente até *Quarta-feira, 15 de dezembro de 2021 (15/12/2021)*!
+```
+yarn test
+# or
+npm test
+````
